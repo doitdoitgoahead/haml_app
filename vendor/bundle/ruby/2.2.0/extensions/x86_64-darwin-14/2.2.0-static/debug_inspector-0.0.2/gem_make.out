@@ -1,0 +1,11 @@
+/Users/taotao/.rbenv/versions/2.2.0/bin/ruby -r ./siteconf20150403-49256-1cqmp74.rb extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20150403-49256-1ghhz2t
