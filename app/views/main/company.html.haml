@@ -1,0 +1,129 @@
+%nav.navbar.navbar-default
+  .container-fluid
+    / Brand and toggle get grouped for better mobile display
+    .navbar-header
+      %button.navbar-toggle.collapsed{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{:href => "http://localhost:3000/index"} 企業研究.com
+    / Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a{:href => "http://localhost:3000/sessions/new"} LOGIN
+        %li
+          %a{:href => "http://localhost:3000/registrations/new"} 会員登録
+        %li
+          %a{:href => "http://localhost:3000/write"} レポートを書く
+    / /.navbar-collapse
+  / /.container-fluid
+/ ------------
+%h2.headline
+  企業一覧から選ぶ
+  %h2
+    .tags-area
+      #tags.bottom
+        .container
+          .row
+            .col-xs-4
+              %h2.kigyo-title 商社
+              %a.tag{:href => "/tags/三菱商事"}
+                .tag_title 三菱商事
+                .clearfix
+              %a.tag{:href => "/tags/三井物産"}
+                .tag_title 三井物産
+                .clearfix
+              %a.tag{:href => "/tags/伊藤忠商事"}
+                .tag_title 伊藤忠商事
+                .clearfix
+              %a.tag{:href => "/tags/丸紅"}
+                .tag_title 丸紅
+                .clearfix
+              %a.tag{:href => "/tags/”双日"}
+                .tag_title 双日
+                .clearfix
+            .col-xs-4
+              %h2.kigyo-title 金融系
+              %a.tag{:href => "/tags/ゴールドマン・サックス"}
+                .tag_title ゴールドマン・サックス
+                .clearfix
+              %a.tag{:href => "/tags/J.P.モルガン"}
+                .tag_title J.P.モルガン
+                .clearfix
+              %a.tag{:href => "/tags/モルガン・スタンレー"}
+                .tag_title モルガン・スタンレー
+                .clearfix
+              %a.tag{:href => "/tags/ドイツ銀行グループ"}
+                .tag_title ドイツ銀行グループ
+                .clearfix
+              %a.tag{:href => "/tags/バークレイズ"}
+                .tag_title バークレイズ
+                .clearfix
+              %a.tag{:href => "/tags/三菱UFJモルガン・スタンレー"}
+                .tag_title 三菱UFJモルガン・スタンレー
+                .clearfix
+              %a.tag{:href => "/tags/シティグループ"}
+                .tag_title シティグループ
+                .clearfix
+              %a.tag{:href => "/tags/野村證券"}
+                .tag_title 野村證券
+                .clearfix
+              %a.tag{:href => "/tags/日興証券"}
+                .tag_title 日興証券
+                .clearfix
+            .col-xs-4
+              %h2.kigyo-title コンサル
+              %a.tag{:href => "/tags/マッキンゼー＆カンパニー"}
+                .tag_title マッキンゼー＆カンパニー
+                .clearfix
+              %a.tag{:href => "/tags/ボストンコンサルティング"}
+                .tag_title ボストンコンサルティング
+                .clearfix
+              %a.tag{:href => "/tags/ベイン・アンド・カンパニー"}
+                .tag_title ベイン・アンド・カンパニー
+                .clearfix
+              %a.tag{:href => "/tags/A.T.カーニー"}
+                .tag_title A.T.カーニー
+                .clearfix
+              %a.tag{:href => "/tags/アクセンチュア"}
+                .tag_title アクセンチュア
+                .clearfix
+              %a.tag{:href => "/tags/PWC"}
+                .tag_title PWC
+                .clearfix
+              %a.tag{:href => "/tags/デロイト"}
+                .tag_title デロイト
+                .clearfix
+          .col-xs-4
+            %h2.kigyo-title メーカー
+            %a.tag{:href => "/tags/資生堂"}
+              .tag_title 資生堂
+              .clearfix
+            %a.tag{:href => "/tags/花王"}
+              .tag_title 花王
+              .clearfix
+            %a.tag{:href => "/tags/ソニー"}
+              .tag_title ソニー
+              .clearfix
+            %a.tag{:href => "/tags/アサヒビール"}
+              .tag_title アサヒビール
+              .clearfix
+          .col-xs-4
+            %h2.kigyo-title 広告・マスコミ系
+            %a.tag{:href => "http://localhost:3000/report"}
+              .tag_title 電通
+              .clearfix
+            %a.tag{:href => "/tags/博報堂"}
+              .tag_title 博報堂
+              .clearfix
+            %a.tag{:href => "/tags/朝日新聞"}
+              .tag_title 朝日新聞
+              .clearfix
+            %a.tag{:href => "/tags/毎日新聞"}
+              .tag_title 毎日新聞
+              .clearfix
+            %a.tag{:href => "/tags/日本経済新聞"}
+              .tag_title 日本経済新聞
+              .clearfix
