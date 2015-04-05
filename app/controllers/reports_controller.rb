@@ -1,4 +1,13 @@
 class ReportsController < ApplicationController
+
+  def edit
+    @report = Report.find(params[:id])
+  end
+
+  def show
+    @report = Report.find(params[:id])
+  end
+
   def new
     @report = Report.new
   end
