@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get '/show', to: "main#show"
   get '/write', to: "reports#new"
   get '/registrations', to:"registrations#new"
+  get '/sessions', to:"sessions#new"
 
   root to: "main#index"
   # The priority is based upon order of creation: first created -> highest priority.
